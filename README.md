@@ -1,5 +1,5 @@
 # Playwright
-This is a place a practice my Playwright skills.
+This is a place where I practice my Playwright skills.
 
 # Assertions
 Here I practiced the Playwright assertions on the https://the-internet.herokuapp.com/ site:

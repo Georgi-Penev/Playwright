@@ -17,10 +17,10 @@ Here I practiced the Playwright assertions on the https://the-internet.herokuapp
  The POM manager.
  ![POM_Manager](/images/POM%20Manager.png)
 
- My commonly used functions.
+ My commonly used functions.<br>
  ![CommonActions](/images/Common%20Actions.png)
 
- My secure page setup.
+ My secure page setup.<br>
  ![SecurePage](/images/Secure%20Page.png)
 
  My login page setup.

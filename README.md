@@ -2,7 +2,7 @@
 This is a place where I practice my Playwright skills.
 
 # Assertions
-Here I practiced the Playwright assertions on the https://the-internet.herokuapp.com/ site:
+Here I practiced the Playwright assertions on the https://the-internet.herokuapp.com/ site:<br>
 [Assertions](/tests/Assertions.spec.js)
 
  These are the login page tests.

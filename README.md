@@ -3,36 +3,36 @@ This is a place where I practice my Playwright skills.
 
 # Assertions
 Here I practiced the Playwright assertions on the https://the-internet.herokuapp.com/ site:
-![Assertions](/images/Assertions.png)
+![Assertions](/tests/Assertions.spec.js)
 
  These are the login page tests.
- ![LoginPageTests](/images/Login%20Page%20Tests.png)
+ ![LoginPageTests](/tests/Login%20Page.spec.js)
 
  These are for the Add and Remove Element functionality.
- ![Add/RemoveElement](/images/Add-Remove%20Element%20Test.png)
+ ![Add/RemoveElement](/tests/Add-Remove%20Element.spec.js)
 
  # POM Setup
  Here I practice my POM setup.
 
  The POM manager.
- ![POM_Manager](/images/POM%20Manager.png)
+ ![POM_Manager](/pom_usage/pages/PomManager.js)
 
  My commonly used functions.<br>
- ![CommonActions](/images/Common%20Actions.png)
+ ![CommonActions](/pom_usage/utils/CommonActions.js)
 
  My secure page setup.<br>
- ![SecurePage](/images/Secure%20Page.png)
+ ![SecurePage](/pom_usage/pages/SecurePage.js)
 
  My login page setup.
- ![LoginPage](/images/Login%20Page.png)
+ ![LoginPage](/pom_usage/pages/LoginPage.js)
 
  My checkboxes page setup.
- ![CheckboxesPage](/images/Checkboxes%20Page.png)
+ ![CheckboxesPage](/pom_usage/pages/CheckboxesPage.js)
 
  My POM tests for the pages above.
- ![POMTests](/images/POM%20Tests.png)
+ ![POMTests](/pom_usage/tests/pomTests.spec.js)
 
  # API Tests
  These are the API tests I practised using the https://reqres.in/ site:
 
- ![APITEsts](/images/API%20Tests.png)
+ ![APITEsts](/api_usage/tests/api_testing.spec.js)

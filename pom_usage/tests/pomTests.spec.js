@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import PomManager from '../pages/PomManeger.js'
+import PomManager from '../pages/PomManager.js'
 
 let pm
 

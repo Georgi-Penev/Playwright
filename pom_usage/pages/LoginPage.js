@@ -1,6 +1,5 @@
 import { expect } from "@playwright/test";
 import CommonActions from "../utils/CommonActions.js";
-import { use } from "chai";
 
 export default class LoginPage {
     constructor(page) {

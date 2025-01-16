@@ -17,10 +17,10 @@ Here I practiced the Playwright assertions on the https://the-internet.herokuapp
  The POM manager.
  [POM_Manager](/pom_usage/pages/PomManager.js)
 
- My commonly used functions.<br>
+ My commonly used functions.
  [CommonActions](/pom_usage/utils/CommonActions.js)
 
- My secure page setup.<br>
+ My secure page setup.
  [SecurePage](/pom_usage/pages/SecurePage.js)
 
  My login page setup.

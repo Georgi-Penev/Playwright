@@ -1,4 +1,4 @@
-# Playwright
+# Playwright-Playground
 This is a place where I practice my Playwright skills.
 
 # Assertions

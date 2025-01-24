@@ -22,4 +22,7 @@ export default class CommonActions {
         const elementLocator = await this.page.locator(selector)
         return await elementLocator.locator('*').count()
     }
+    async isVisible(selector) {
+        return await this.page.isVisible(selector)
+    }
 }

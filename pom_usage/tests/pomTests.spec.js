@@ -59,3 +59,26 @@ test.describe('Add/Remove Elements Tests', () => {
     })
 
 })
+test.describe('Challenging DOM Tests', (page) => {
+    test.beforeEach(async ({ page }) => {
+        pm = new PomManager(page)
+    })
+    test.afterEach(async ({ page }) => {
+        await page.close()
+    })
+    test('should check visible buttons', async () => {
+        await pm.challengingDOMPage.navigate()
+        await pm.challengingDOMPage.assertBlueButton()
+        await pm.challengingDOMPage.assertRedButton()
+        await pm.challengingDOMPage.assertGreenButton()
+    })
+    test('should check visible canvas', async () => {
+        await pm.challengingDOMPage.navigate()
+        await pm.challengingDOMPage.assertCanvas()
+    })
+})
+test('should check visible table', async ({ page }) => {
+    await page.goto('https://the-internet.herokuapp.com/challenging_dom')
+    const rows = await page.getByText('Iuvaret').all()
+    expect(rows.length).toBe(10)
+})

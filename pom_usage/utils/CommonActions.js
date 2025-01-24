@@ -18,4 +18,8 @@ export default class CommonActions {
     async isChecked(selector) {
         return await this.page.isChecked(selector)
     }
+    async count(selector) {
+        const elementLocator = await this.page.locator(selector)
+        return await elementLocator.locator('*').count()
+    }
 }

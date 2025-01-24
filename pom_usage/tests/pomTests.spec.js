@@ -45,3 +45,17 @@ test.describe('Checkbox Tests', () => {
     })
 
 })
+test.describe('Add/Remove Elements Tests', () => {
+    test.beforeEach(async ({ page }) => {
+        pm = new PomManager(page)
+    })
+    test.afterEach(async ({ page }) => {
+        await page.close()
+    })
+    test('should check counted elements', async () => {
+        await pm.addRemovePage.navigate()
+        await pm.addRemovePage.addElement(2)
+        await pm.addRemovePage.assertCount('#elements', 2)
+    })
+
+})

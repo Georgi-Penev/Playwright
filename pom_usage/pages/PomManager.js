@@ -1,6 +1,7 @@
 import LoginPage from "./LoginPage.js";
 import SecurePage from "./SecurePage.js";
 import CheckboxesPage from "./CheckboxesPage.js";
+import AddRemovePage from "./AddRemovePage.js";
 
 export default class PomManager {
     constructor(page) {
@@ -8,5 +9,6 @@ export default class PomManager {
         this.loginPage = new LoginPage(page)
         this.securePage = new SecurePage(page)
         this.checkboxesPage = new CheckboxesPage(page)
+        this.addRemovePage = new AddRemovePage(page)
     }
 }

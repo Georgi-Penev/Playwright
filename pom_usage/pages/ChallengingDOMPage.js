@@ -24,5 +24,9 @@ export default class ChallengingDOMPage {
         const isVisible = await this.actions.isVisible('#canvas')
         expect(isVisible).toBeTruthy()
     }
+    async assertAllText(locator, numberOfElements) {
+        const allOfElements = await this.actions.findAllByText(locator)
+        expect(allOfElements.length).toBe(numberOfElements)
+    }
 
 }

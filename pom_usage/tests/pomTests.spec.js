@@ -76,9 +76,21 @@ test.describe('Challenging DOM Tests', (page) => {
         await pm.challengingDOMPage.navigate()
         await pm.challengingDOMPage.assertCanvas()
     })
-    test('should check visible table', async ({ page }) => {
-        await page.goto('https://the-internet.herokuapp.com/challenging_dom')
-        const rows = await page.getByText('Iuvaret').all()
-        expect(rows.length).toBe(10)
+    test('should check visible table', async () => {
+        await pm.challengingDOMPage.navigate()
+        await pm.challengingDOMPage.assertAllText('Iuvaret', 10)
+    })
+})
+test.describe('Basic Auth Tests', (page) => {
+    test.beforeEach(async ({ page }) => {
+        pm = new PomManager(page)
+    })
+    test.afterEach(async ({ page }) => {
+        await page.close()
+    })
+    test('should check auth is correct', async () => {
+        await pm.basicAuthPage.navigate('admin', 'admin')
+        await pm.basicAuthPage.assertProperAuth()
+
     })
 })

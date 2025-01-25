@@ -24,4 +24,7 @@ export default class CommonActions {
     async isVisible(locator) {
         return await this.page.locator(locator).isVisible()
     }
+    async findAllByText(locator) {
+        return await this.page.getByText(locator).all()
+    }
 }

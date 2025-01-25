@@ -3,26 +3,25 @@ export default class CommonActions {
         this.page = page
     }
     async navigate(url) {
-        await this.page.pause()
         await this.page.goto(url)
     }
-    async click(selector) {
-        await this.page.click(selector)
+    async click(locator) {
+        await this.page.locator(locator).click()
     }
-    async fill(selector, text) {
-        await this.page.fill(selector, text)
+    async fill(locator, text) {
+        await this.page.locator(locator).fill(text)
     }
-    async getText(selector) {
-        return await this.page.textContent(selector)
+    async getText(locator) {
+        return await this.page.locator(locator).textContent()
     }
-    async isChecked(selector) {
-        return await this.page.isChecked(selector)
+    async isChecked(locator) {
+        return await this.page.locator(locator).isChecked()
     }
-    async count(selector) {
-        const elementLocator = await this.page.locator(selector)
+    async count(locator) {
+        const elementLocator = await this.page.locator(locator)
         return await elementLocator.locator('*').count()
     }
-    async isVisible(selector) {
-        return await this.page.isVisible(selector)
+    async isVisible(locator) {
+        return await this.page.locator(locator).isVisible()
     }
 }

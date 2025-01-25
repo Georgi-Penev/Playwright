@@ -29,6 +29,12 @@ Here I practiced the Playwright assertions on the https://the-internet.herokuapp
  My checkboxes page setup.
  [CheckboxesPage](/pom_usage/pages/CheckboxesPage.js)
 
+ My add/remove element page setup.
+ [Add/RemovePage](/pom_usage/pages/AddRemovePage.js)
+
+ My challenging DOM page setup.
+ [ChallengingDOMPage](/pom_usage/pages/ChallengingDOMPage.js)
+
  My POM tests for the pages above.
  [POMTests](/pom_usage/tests/pomTests.spec.js)
 

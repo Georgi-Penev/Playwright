@@ -76,9 +76,9 @@ test.describe('Challenging DOM Tests', (page) => {
         await pm.challengingDOMPage.navigate()
         await pm.challengingDOMPage.assertCanvas()
     })
-})
-test('should check visible table', async ({ page }) => {
-    await page.goto('https://the-internet.herokuapp.com/challenging_dom')
-    const rows = await page.getByText('Iuvaret').all()
-    expect(rows.length).toBe(10)
+    test('should check visible table', async ({ page }) => {
+        await page.goto('https://the-internet.herokuapp.com/challenging_dom')
+        const rows = await page.getByText('Iuvaret').all()
+        expect(rows.length).toBe(10)
+    })
 })
